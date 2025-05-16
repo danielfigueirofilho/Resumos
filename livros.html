@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros - Resumos de Livros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Resumos de Livros</div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="livros.html">Livros</a>
+                <a href="categorias.html">Categorias</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+            <input type="text" class="search-box" placeholder="Buscar...">
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumbs">
+            <p>Home > Livros</p>
+        </div>
+        
+        <h1 class="section-title">Livros</h1>
+        
+        <!-- Filtros -->
+        <div class="filters">
+            <h2 class="filters-title">Filtros</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" class="filter-input">
+                        <option value="todos">Todos</option>
+                        <option value="financas-pessoais">Finanças Pessoais</option>
+                        <option value="empreendedorismo">Empreendedorismo</option>
+                        <option value="investimentos">Investimentos</option>
+                        <option value="lideranca">Liderança</option>
+                        <option value="produtividade">Produtividade</option>
+                        <option value="economia">Economia</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor" class="filter-input" placeholder="Nome do autor">
+                </div>
+                <div class="filter-group">
+                    <label for="ano">Ano</label>
+                    <select id="ano" class="filter-input">
+                        <option value="todos">Todos</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="mais-antigos">Mais antigos</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="ordenar">Ordenar por</label>
+                    <select id="ordenar" class="filter-input">
+                        <option value="recentes">Mais recentes</option>
+                        <option value="antigos">Mais antigos</option>
+                        <option value="alfabetico-asc">Alfabético (A-Z)</option>
+                        <option value="alfabetico-desc">Alfabético (Z-A)</option>
+                        <option value="avaliacao">Melhor avaliados</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lista de Livros -->
+        <div class="books-grid">
+            <!-- Card 1 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">Pai Rico, Pai Pobre</h3>
+                    <p class="book-author">Robert Kiyosaki</p>
+                    <span class="book-category">Finanças Pessoais</span>
+                    <div class="book-rating">★★★★☆</div>
+                    <p class="book-description">O clássico sobre educação financeira que ensina a importância dos ativos e da mentalidade empreendedora.</p>
+                    <a href="livro-pai-rico.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">O Investidor Inteligente</h3>
+                    <p class="book-author">Benjamin Graham</p>
+                    <span class="book-category">Investimentos</span>
+                    <div class="book-rating">★★★★★</div>
+                    <p class="book-description">A bíblia do investimento em valor, com princípios atemporais para investidores de longo prazo.</p>
+                    <a href="livro-investidor-inteligente.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">A Startup Enxuta</h3>
+                    <p class="book-author">Eric Ries</p>
+                    <span class="book-category">Empreendedorismo</span>
+                    <div class="book-rating">★★★★☆</div>
+                    <p class="book-description">Como utilizar a inovação contínua para criar negócios bem-sucedidos em um mundo incerto.</p>
+                    <a href="livro-startup-enxuta.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">Do Mil ao Milhão</h3>
+                    <p class="book-author">Thiago Nigro</p>
+                    <span class="book-category">Finanças Pessoais</span>
+                    <div class="book-rating">★★★★☆</div>
+                    <p class="book-description">Estratégias para acumular o primeiro milhão e alcançar a independência financeira.</p>
+                    <a href="livro-do-mil-ao-milhao.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">Mindset</h3>
+                    <p class="book-author">Carol Dweck</p>
+                    <span class="book-category">Produtividade</span>
+                    <div class="book-rating">★★★★★</div>
+                    <p class="book-description">A nova psicologia do sucesso e como podemos aprender a cumprir nosso potencial.</p>
+                    <a href="livro-mindset.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="book-card">
+                <div class="book-cover">Capa do Livro</div>
+                <div class="book-info">
+                    <h3 class="book-title">Essencialismo</h3>
+                    <p class="book-author">Greg McKeown</p>
+                    <span class="book-category">Produtividade</span>
+                    <div class="book-rating">★★★☆☆</div>
+                    <p class="book-description">A disciplina de buscar menos para conquistar mais, focando no que realmente importa.</p>
+                    <a href="livro-essencialismo.html" class="btn">Ver Resumo</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Paginação -->
+        <div class="pagination">
+            <a href="#" class="pagination-item">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <a href="#" class="pagination-item">4</a>
+            <a href="#" class="pagination-item">></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Resumos de Livros</h3>
+                    <p>Uma coleção pessoal de resumos de livros sobre finanças e empreendedorismo.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Finanças Pessoais</a></li>
+                        <li><a href="#">Empreendedorismo</a></li>
+                        <li><a href="#">Investimentos</a></li>
+                        <li><a href="#">Liderança</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p>Email: contato@resumosdelivros.com</p>
+                    <div class="social-links">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Resumos de Livros. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
